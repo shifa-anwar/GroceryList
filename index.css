@@ -1,0 +1,127 @@
+*
+{
+   box-sizing: border-box;
+   margin:0;
+   padding:0;
+}
+body{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 80%;
+    margin-top: 3rem;
+    background:#A0E9DB;
+}
+.addItem-action, .displayItem-action{
+    border: 2px solid #272932;
+    padding: 0.5rem 0;
+    text-transform: capitalize;
+    border-radius: 0.5rem;
+    display: none;
+}
+.addItem
+{
+    background-color: #1ABC9C; 
+    margin:auto;  
+}
+.displayItem
+{
+    background-color: #1ABC9C; 
+    margin:auto; 
+}
+.addItem ,.displayItem
+{ 
+    margin: 1rem 0;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    border: 2px solid #272932;
+    box-shadow: 0 5px 10px #272932;
+}
+input
+{
+    background: transparent;
+    border: none;
+    padding-top:40px;
+    width: 80%;
+    outline: none;
+    border-bottom: 5px solid #9e90a2;
+}
+.text-input:focus
+{
+width:100%;
+}
+.Bclear, .Badd
+{
+margin: auto;    
+width:80%;
+display: block;
+border-radius: 1px;
+background-color: #1ABC9C; 
+color:aliceblue;
+padding:5px 8px; 
+ margin-top: 30px;  
+ cursor: pointer;
+ text-transform: capitalize;
+}
+
+ 
+.Badd:hover
+{
+ border-radius: 10px; 
+ background-color: aliceblue; 
+ color:#1ABC9C; 
+}
+
+.grocery-item
+{
+ display:grid;
+ grid-template-columns: 4fr 1fr;
+ align-items: center;
+ border-radius: 0.5 rem; 
+ padding:0.5rem;
+ transition:  all 1s ease-in-out;
+ margin: 0.5rem 0;  
+}
+
+.grocery-item:hover{
+    background: #828489;
+}
+.grocery-item__link
+{
+  color:red;
+  transition:all 2s linear;  
+}
+.grocery-item__title{
+    text-align: left;
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: #272932;
+}
+.grocery-item:hover .grocery-item__link
+{
+ transform : scale(2);   
+}
+.Bclear
+{
+transition: all 2s ease; 
+}
+.alert
+{
+   color:red;
+   border-color: red;
+   display: block;
+   margin-bottom: 0.5rem; 
+}
+.success
+{
+    color:#20b820;
+    border-color:#20b820;
+    display: block;
+    margin-bottom:0.5rem;
+}
+@media screen and (min-width: 768px){
+    body{
+        grid-template-columns: 50%;
+    }
+}
